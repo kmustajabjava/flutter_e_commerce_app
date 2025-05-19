@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_e_commerce_app/common/widgets/buttons/elevatedButton.dart';
+import 'package:flutter_e_commerce_app/common/widgets/buttons/elevated_button.dart';
 import 'package:flutter_e_commerce_app/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 import 'package:get/get.dart';

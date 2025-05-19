@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_e_commerce_app/common/widgets/buttons/elevatedButton.dart';
-import 'package:flutter_e_commerce_app/common/widgets/buttons/outlinedButton.dart';
+import 'package:flutter_e_commerce_app/common/widgets/buttons/elevated_button.dart';
+import 'package:flutter_e_commerce_app/common/widgets/buttons/outlined_button.dart';
+import 'package:flutter_e_commerce_app/features/authentication/screens/signup/signup_screen.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 import 'package:flutter_e_commerce_app/utils/constants/texts.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class LoginForm extends StatelessWidget {
@@ -13,14 +15,14 @@ class LoginForm extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TextField(
+        TextFormField(
           decoration: InputDecoration(
             prefixIcon: Icon(Iconsax.direct_right),
             label: Text(UTexts.email),
           ),
         ),
         SizedBox(height: USizes.spaceBtwInputFields),
-        TextField(
+        TextFormField(
           decoration: InputDecoration(
             prefixIcon: Icon(Iconsax.password_check),
             label: Text(UTexts.password),
@@ -48,7 +50,12 @@ class LoginForm extends StatelessWidget {
         UElevatedButton(onPressed: () {}, child: Text(UTexts.signIn)),
         SizedBox(height: USizes.spaceBtwItems),
         //create account button
-        UOutlinedButton(onPressed: () {}, child: Text(UTexts.createAccount)),
+        UOutlinedButton(
+          onPressed: () {
+            Get.to(SignupScreen());
+          },
+          child: Text(UTexts.createAccount),
+        ),
       ],
     );
   }
