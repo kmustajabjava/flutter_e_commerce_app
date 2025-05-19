@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/common/widgets/buttons/elevated_button.dart';
 import 'package:flutter_e_commerce_app/common/widgets/buttons/outlined_button.dart';
+import 'package:flutter_e_commerce_app/features/authentication/screens/forgot_password/forgot_pass_screen.dart';
 import 'package:flutter_e_commerce_app/features/authentication/screens/signup/signup_screen.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 import 'package:flutter_e_commerce_app/utils/constants/texts.dart';
@@ -41,7 +42,12 @@ class LoginForm extends StatelessWidget {
               ],
             ),
 
-            TextButton(onPressed: () {}, child: Text(UTexts.forgetPassword)),
+            TextButton(
+              onPressed: () {
+                Get.to(() => ForgotPassScreen());
+              },
+              child: Text(UTexts.forgetPassword),
+            ),
           ],
         ),
 
@@ -52,7 +58,7 @@ class LoginForm extends StatelessWidget {
         //create account button
         UOutlinedButton(
           onPressed: () {
-            Get.to(SignupScreen());
+            Get.to(() => SignupScreen());
           },
           child: Text(UTexts.createAccount),
         ),

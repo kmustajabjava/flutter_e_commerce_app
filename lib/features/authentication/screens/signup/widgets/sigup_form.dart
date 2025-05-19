@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/common/widgets/buttons/elevated_button.dart';
 import 'package:flutter_e_commerce_app/features/authentication/screens/signup/widgets/privacy_policy_checkbox.dart';
-import 'package:flutter_e_commerce_app/utils/constants/colors.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 import 'package:flutter_e_commerce_app/utils/constants/texts.dart';
 import 'package:iconsax/iconsax.dart';
