@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../constants/colors.dart';
 import '../../constants/sizes.dart';
 
@@ -10,7 +9,7 @@ class UOutlinedButtonTheme {
     style: OutlinedButton.styleFrom(
       elevation: 0,
       foregroundColor: UColors.dark,
-      side: const BorderSide(color: UColors.borderPrimary),
+      side: const BorderSide(color: UColors.black),
       textStyle: const TextStyle(
         fontSize: 16,
         color: UColors.black,

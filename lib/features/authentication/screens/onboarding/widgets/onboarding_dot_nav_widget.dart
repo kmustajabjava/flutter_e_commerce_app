@@ -13,11 +13,13 @@ class OnBoardingDotNavigation extends StatelessWidget {
       bottom: UDeviceHelper.getBottomNavigationBarHeight() * 4,
       left: UDeviceHelper.getScreenWidth(context) / 3.5,
       right: UDeviceHelper.getScreenWidth(context) / 3.5,
-      child: SmoothPageIndicator(
-        controller: controller.pageController,
-        onDotClicked: controller.dotNavigationClick,
-        count: 3,
-        effect: ExpandingDotsEffect(dotHeight: 6.0),
+      child: Center(
+        child: SmoothPageIndicator(
+          controller: controller.pageController,
+          onDotClicked: controller.dotNavigationClick,
+          count: 3,
+          effect: ExpandingDotsEffect(dotHeight: 6.0),
+        ),
       ),
     );
   }

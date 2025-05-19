@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:flutter_e_commerce_app/features/authentication/screens/login/login_screen.dart';
 import 'package:get/get.dart';
 
 class OnboardingController extends GetxController {
@@ -19,6 +20,7 @@ class OnboardingController extends GetxController {
 
   void nextPage() {
     if (currentIndex.value == 2) {
+      Get.offAll(() => LoginScreen());
       return;
     }
     currentIndex++;

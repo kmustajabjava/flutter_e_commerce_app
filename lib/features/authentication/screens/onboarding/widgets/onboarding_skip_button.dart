@@ -13,7 +13,6 @@ class OnBoardingSkipButton extends StatelessWidget {
               ? SizedBox()
               : Positioned(
                 right: 0,
-                top: 10,
                 child: TextButton(
                   onPressed: controller.skipPage,
                   child: Text('Skip'),
