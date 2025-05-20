@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/common/widgets/buttons/elevated_button.dart';
+import 'package:flutter_e_commerce_app/features/authentication/screens/signup/email_verify.dart';
 import 'package:flutter_e_commerce_app/features/authentication/screens/signup/widgets/privacy_policy_checkbox.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 import 'package:flutter_e_commerce_app/utils/constants/texts.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SignUpForm extends StatelessWidget {
@@ -60,7 +62,12 @@ class SignUpForm extends StatelessWidget {
         PrivacyPolicyWidget(),
         SizedBox(height: USizes.spaceBtwInputFields / 2),
         //button
-        UElevatedButton(onPressed: () {}, child: Text(UTexts.createAccount)),
+        UElevatedButton(
+          onPressed: () {
+            Get.to(() => EmailVerifyScreen());
+          },
+          child: Text(UTexts.createAccount),
+        ),
       ],
     );
   }
