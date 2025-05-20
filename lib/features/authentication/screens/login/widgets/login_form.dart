@@ -3,6 +3,7 @@ import 'package:flutter_e_commerce_app/common/widgets/buttons/elevated_button.da
 import 'package:flutter_e_commerce_app/common/widgets/buttons/outlined_button.dart';
 import 'package:flutter_e_commerce_app/features/authentication/screens/forgot_password/forgot_pass_screen.dart';
 import 'package:flutter_e_commerce_app/features/authentication/screens/signup/signup_screen.dart';
+import 'package:flutter_e_commerce_app/navigation_menu.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 import 'package:flutter_e_commerce_app/utils/constants/texts.dart';
 import 'package:get/get.dart';
@@ -53,7 +54,12 @@ class LoginForm extends StatelessWidget {
 
         SizedBox(height: USizes.spaceBtwSections),
         //signin button
-        UElevatedButton(onPressed: () {}, child: Text(UTexts.signIn)),
+        UElevatedButton(
+          onPressed: () {
+            Get.to(() => NavigationMenu());
+          },
+          child: Text(UTexts.signIn),
+        ),
         SizedBox(height: USizes.spaceBtwItems),
         //create account button
         UOutlinedButton(
