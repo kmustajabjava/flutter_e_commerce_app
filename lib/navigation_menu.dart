@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_e_commerce_app/features/dashboard/screens/home/home.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -46,7 +47,7 @@ class NavigationController extends GetxController {
   RxInt selectedIndex = 0.obs;
 
   List<Widget> screens = [
-    Container(),
+    HomeScreen(),
     Container(),
     Container(),
     Container(),
