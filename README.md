@@ -14,4 +14,5 @@
    - Search Bar
    - App Bar
    - Categories
+   - Banners
 
