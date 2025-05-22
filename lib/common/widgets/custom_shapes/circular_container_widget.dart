@@ -4,17 +4,19 @@ import 'package:flutter_e_commerce_app/utils/constants/colors.dart';
 class CircularWidget extends StatelessWidget {
   const CircularWidget({
     super.key,
-    this.height = 400.0,
-    this.width = 400.0,
-    this.radius = 500.0,
+    this.height = 400,
+    this.width = 400,
+    this.backgroundColor = UColors.white,
     this.padding,
     this.margin,
-    this.backgroundColor = UColors.white,
+    this.child,
   });
 
-  final double height, width, radius;
-  final EdgeInsetsGeometry? padding, margin;
+  final double height, width;
   final Color backgroundColor;
+  final EdgeInsetsGeometry? padding, margin;
+  final Widget? child;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,9 +25,10 @@ class CircularWidget extends StatelessWidget {
       padding: padding,
       margin: margin,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(radius),
+        borderRadius: BorderRadius.circular(1000),
         color: backgroundColor,
       ),
+      child: child,
     );
   }
 }

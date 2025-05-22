@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/common/widgets/custom_shapes/clipper/custom_rounded_clipper.dart';
-import 'package:flutter_e_commerce_app/features/dashboard/screens/widgets/circular_container_widget.dart';
+import 'package:flutter_e_commerce_app/common/widgets/custom_shapes/circular_container_widget.dart';
 import 'package:flutter_e_commerce_app/utils/constants/colors.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 
