@@ -15,4 +15,4 @@
    - App Bar
    - Categories
    - Banners
-
+- Product Card (Vertical)
