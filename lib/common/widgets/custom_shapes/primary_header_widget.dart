@@ -1,40 +1,49 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_e_commerce_app/common/widgets/custom_shapes/clipper/custom_rounded_clipper.dart';
 import 'package:flutter_e_commerce_app/common/widgets/custom_shapes/circular_container_widget.dart';
+import 'package:flutter_e_commerce_app/common/widgets/custom_shapes/rounded_edges_container.dart';
 import 'package:flutter_e_commerce_app/utils/constants/colors.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 
-class PrimaryContainerHeader extends StatelessWidget {
-  const PrimaryContainerHeader({super.key, required this.child});
+class PrimaryHeaderContainer extends StatelessWidget {
+  const PrimaryHeaderContainer({
+    super.key,
+    required this.child,
+    required this.height,
+  });
 
   final Widget child;
+  final double height;
   @override
   Widget build(BuildContext context) {
-    return ClipPath(
-      clipper: CustomRoundEdges(),
+    return URoundedEdgesContainer(
       child: Container(
-        height: USizes.homePrimaryHeaderHeight,
+        height: height,
         color: UColors.primary,
         child: Stack(
           children: [
+            /// Circular Container
             Positioned(
-              right: -150,
-              top: -160,
+              top: -150,
+              right: -160,
               child: CircularWidget(
                 height: USizes.homePrimaryHeaderHeight,
                 width: USizes.homePrimaryHeaderHeight,
                 backgroundColor: UColors.white.withValues(alpha: 0.1),
               ),
             ),
+
+            /// Circular Container
             Positioned(
-              right: -250,
               top: 50,
+              right: -250,
               child: CircularWidget(
                 height: USizes.homePrimaryHeaderHeight,
                 width: USizes.homePrimaryHeaderHeight,
                 backgroundColor: UColors.white.withValues(alpha: 0.1),
               ),
             ),
+
+            /// Child
             child,
           ],
         ),

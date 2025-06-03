@@ -28,7 +28,8 @@ class HomeScreen extends StatelessWidget {
             Stack(
               children: [
                 SizedBox(height: USizes.homePrimaryHeaderHeight + 20),
-                PrimaryContainerHeader(
+                PrimaryHeaderContainer(
+                  height: USizes.homePrimaryHeaderHeight,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [

@@ -4,11 +4,14 @@ class CustomRoundEdges extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     Path path = Path();
+
+    /// Top To Bottom Line
     path.lineTo(0, size.height - 40);
 
-    // First Curve
+    /// First Curve
     Offset firstPointCurve1 = Offset(40, size.height);
     Offset secondPointCurve1 = Offset(size.width / 2, size.height);
+
     path.quadraticBezierTo(
       firstPointCurve1.dx,
       firstPointCurve1.dy,
@@ -16,9 +19,10 @@ class CustomRoundEdges extends CustomClipper<Path> {
       secondPointCurve1.dy,
     );
 
-    // Second Curve
+    /// Second Curve
     Offset firstPointCurve2 = Offset(size.width - 40, size.height);
     Offset secondPointCurve2 = Offset(size.width, size.height - 40);
+
     path.quadraticBezierTo(
       firstPointCurve2.dx,
       firstPointCurve2.dy,
@@ -26,7 +30,9 @@ class CustomRoundEdges extends CustomClipper<Path> {
       secondPointCurve2.dy,
     );
 
+    /// Bottom To Top Line
     path.lineTo(size.width, 0);
+
     return path;
   }
 

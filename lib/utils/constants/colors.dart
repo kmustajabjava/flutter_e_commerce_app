@@ -4,7 +4,8 @@ class UColors {
   UColors._(); // makes the class singleton, prevents memory leakage, no object of this class can be created because of this
 
   // Primary Color
-  static const Color primary = Color(0xFF0857A0);
+  // static const Color primary = Color(0xFF0857A0);
+  static const Color primary = Color(0xFF5a233b);
 
   // Text colors
   static const Color textPrimary = Color(0xFF333333);
@@ -16,7 +17,8 @@ class UColors {
   static const Color dark = Color(0xFF20272C);
 
   // Button colors
-  static const Color buttonPrimary = Color(0xFF0857A0);
+  // static const Color buttonPrimary = Color(0xFF0857A0);
+  static const Color buttonPrimary = Color(0xFF5a233b);
   static const Color buttonDisabled = Color(0xFFC4C4C4);
 
   // Border colors

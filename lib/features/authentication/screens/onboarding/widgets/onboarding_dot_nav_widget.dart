@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/features/authentication/controllers/onboarding/onboarding_controller.dart';
+import 'package:flutter_e_commerce_app/utils/constants/colors.dart';
 import 'package:flutter_e_commerce_app/utils/helpers/device_helpers.dart';
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -18,7 +19,10 @@ class OnBoardingDotNavigation extends StatelessWidget {
           controller: controller.pageController,
           onDotClicked: controller.dotNavigationClick,
           count: 3,
-          effect: ExpandingDotsEffect(dotHeight: 6.0),
+          effect: ExpandingDotsEffect(
+            dotHeight: 6.0,
+            activeDotColor: UColors.primary,
+          ),
         ),
       ),
     );

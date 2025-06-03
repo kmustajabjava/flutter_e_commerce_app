@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/features/dashboard/screens/home/home.dart';
+import 'package:flutter_e_commerce_app/features/dashboard/screens/store/store.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -48,12 +49,8 @@ class NavigationController extends GetxController {
 
   List<Widget> screens = [
     HomeScreen(),
+    StoreScreen(),
     Container(),
     Container(),
-    Container(),
-    // HomeScreen(),
-    // StoreScreen(),
-    // WishlistScreen(),
-    // ProfileScreen(),
   ];
 }

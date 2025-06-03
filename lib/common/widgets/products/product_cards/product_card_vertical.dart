@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/common/widgets/custom_shapes/rounded_container_widget.dart';
 import 'package:flutter_e_commerce_app/common/widgets/icons/icons_container.dart';
 import 'package:flutter_e_commerce_app/common/widgets/images/rounded_image.dart';
+import 'package:flutter_e_commerce_app/common/widgets/text/brand_title_with_verify_icon.dart';
 import 'package:flutter_e_commerce_app/common/widgets/text/product_price_text.dart';
 import 'package:flutter_e_commerce_app/common/widgets/text/product_title_text.dart';
 import 'package:flutter_e_commerce_app/utils/constants/colors.dart';
@@ -80,22 +81,7 @@ class ProductCardVertical extends StatelessWidget {
                   SizedBox(height: USizes.spaceBtwItems / 2),
 
                   //Product Brand
-                  Row(
-                    children: [
-                      Text(
-                        'Bata',
-                        style: Theme.of(context).textTheme.labelLarge,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      SizedBox(width: USizes.xs),
-                      Icon(
-                        Iconsax.verify5,
-                        color: UColors.primary,
-                        size: USizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  BrandTitleWithVerifyIcon(title: 'Bata'),
                 ],
               ),
             ),
