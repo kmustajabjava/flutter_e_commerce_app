@@ -30,15 +30,16 @@ class ProductCardVertical extends StatelessWidget {
           color: dark ? UColors.darkerGrey : UColors.white,
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             URoundedContainer(
-              width: 180,
+              height: 180,
               padding: const EdgeInsets.all(USizes.sm),
               backgroundColor: dark ? UColors.dark : UColors.light,
               child: Stack(
                 children: [
                   //product Image
-                  RoundedImage(imageUrl: UImages.productImage15),
+                  Center(child: RoundedImage(imageUrl: UImages.productImage15)),
                   //product tag
                   Positioned(
                     top: 12.0,
@@ -70,16 +71,19 @@ class ProductCardVertical extends StatelessWidget {
               ),
             ),
             SizedBox(height: USizes.spaceBtwItems / 2),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                //Product Title
-                ProductTitleText(title: "Blue Bata Shoes", smallSize: true),
-                SizedBox(height: USizes.spaceBtwItems / 2),
+            Padding(
+              padding: const EdgeInsets.only(left: USizes.sm),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  //Product Title
+                  ProductTitleText(title: "Blue Bata Shoes", smallSize: true),
+                  SizedBox(height: USizes.spaceBtwItems / 2),
 
-                //Product Brand
-                BrandTitleWithVerifyIcon(title: 'Bata'),
-              ],
+                  //Product Brand
+                  BrandTitleWithVerifyIcon(title: 'Bata'),
+                ],
+              ),
             ),
             Spacer(),
             Row(

@@ -18,3 +18,4 @@
 - Product Card (Vertical)
 - Store Screen Brands 
 - Brand Showcase Card
+- Wishlist Screen
