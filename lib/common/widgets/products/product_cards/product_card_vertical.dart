@@ -70,20 +70,16 @@ class ProductCardVertical extends StatelessWidget {
               ),
             ),
             SizedBox(height: USizes.spaceBtwItems / 2),
-            Padding(
-              padding: const EdgeInsets.only(left: USizes.sm),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                //Product Title
+                ProductTitleText(title: "Blue Bata Shoes", smallSize: true),
+                SizedBox(height: USizes.spaceBtwItems / 2),
 
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  //Product Title
-                  ProductTitleText(title: "Blue Bata Shoes", smallSize: true),
-                  SizedBox(height: USizes.spaceBtwItems / 2),
-
-                  //Product Brand
-                  BrandTitleWithVerifyIcon(title: 'Bata'),
-                ],
-              ),
+                //Product Brand
+                BrandTitleWithVerifyIcon(title: 'Bata'),
+              ],
             ),
             Spacer(),
             Row(

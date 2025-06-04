@@ -7,13 +7,14 @@ import 'package:flutter_e_commerce_app/utils/constants/images.dart';
 import 'package:flutter_e_commerce_app/utils/constants/sizes.dart';
 
 class BrandCard extends StatelessWidget {
-  const BrandCard({super.key});
-
+  const BrandCard({super.key, this.showBorder = true});
+  final bool showBorder;
   @override
   Widget build(BuildContext context) {
     return URoundedContainer(
       width: USizes.brandCardWidth,
-      showBorder: true,
+      height: USizes.brandCardHeight,
+      showBorder: showBorder,
       padding: EdgeInsets.all(USizes.sm),
       backgroundColor: Colors.transparent,
       child: Row(
