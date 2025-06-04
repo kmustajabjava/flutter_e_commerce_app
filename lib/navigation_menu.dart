@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/features/dashboard/screens/home/home.dart';
 import 'package:flutter_e_commerce_app/features/dashboard/screens/store/store.dart';
 import 'package:flutter_e_commerce_app/features/dashboard/screens/wishlist/wishlist.dart';
+import 'package:flutter_e_commerce_app/features/personalization/screens/profile/profile.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -52,6 +53,6 @@ class NavigationController extends GetxController {
     HomeScreen(),
     StoreScreen(),
     WishlistScreen(),
-    Container(),
+    ProfileScreen(),
   ];
 }

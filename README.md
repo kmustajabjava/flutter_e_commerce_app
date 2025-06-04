@@ -19,3 +19,4 @@
 - Store Screen Brands 
 - Brand Showcase Card
 - Wishlist Screen
+- Profile Screen
