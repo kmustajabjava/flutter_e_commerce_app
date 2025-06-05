@@ -20,3 +20,4 @@
 - Brand Showcase Card
 - Wishlist Screen
 - Profile Screen
+- Edit Profile Screen
