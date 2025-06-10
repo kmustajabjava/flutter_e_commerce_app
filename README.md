@@ -21,3 +21,4 @@
 - Wishlist Screen
 - Profile Screen
 - Edit Profile Screen
+- Product Details Screen
