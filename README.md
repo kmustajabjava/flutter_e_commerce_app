@@ -22,3 +22,4 @@
 - Profile Screen
 - Edit Profile Screen
 - Product Details Screen
+- Addresses Screen
