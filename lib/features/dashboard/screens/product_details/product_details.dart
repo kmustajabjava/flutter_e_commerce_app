@@ -32,12 +32,12 @@ class ProductDetailsScreen extends StatelessWidget {
                   ProductAttributes(),
                   SizedBox(height: USizes.spaceBtwSections),
                   UElevatedButton(onPressed: () {}, child: Text('Checkout')),
-
+                  SizedBox(height: USizes.spaceBtwItems),
                   SectionHeaderWidget(
                     title: 'Description',
                     showActionButton: false,
                   ),
-                  SizedBox(height: USizes.spaceBtwItems),
+                  SizedBox(height: USizes.spaceBtwItems / 2),
                   ReadMoreText(
                     'This is a product of iPhone 11 with 512 GB. This is a product of iPhone 11 with 512 GB. This is a product of iPhone 11 with 512 GB',
                     trimLines: 2,

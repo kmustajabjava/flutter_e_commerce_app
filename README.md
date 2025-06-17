@@ -23,3 +23,4 @@
 - Edit Profile Screen
 - Product Details Screen
 - Addresses Screen
+- Cart Screen
